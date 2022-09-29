@@ -33,12 +33,12 @@ int main(){
                 it use for a read a input for an instance only 
                 take the input from variable then given to another diff. data type variable
                 
-// modulo 10^9+7(10000000007)
+// modulo 10^9+7(10000000007) -> Calculating factorial
 https://www.geeksforgeeks.org/modulo-1097-1000000007/
 (a + b) % M = ((a % M) + (b % M)) % M
 (a * b) % M = ((a % M) * (b % M)) % M
 (a - b) % M = ((a % M) - (b % M) + M) % M
-(a / b) % M = ((a % M) * (b-1(*B_inverse) % M) % M;
+(a / b) % M = ((a % M) * (b-1(b_inverse) % M) % M;
 
                 
                 e.g. from int to string
