@@ -35,6 +35,10 @@ int main(){
                 
 // modulo 10^9+7(10000000007)
 https://www.geeksforgeeks.org/modulo-1097-1000000007/
+(a + b) % M = ((a % M) + (b % M)) % M
+(a * b) % M = ((a % M) * (b % M)) % M
+(a - b) % M = ((a % M) - (b % M) + M) % M
+(a / b) % M = ((a % M) * (b-1(*B_inverse) % M) % M;
 
                 
                 e.g. from int to string
