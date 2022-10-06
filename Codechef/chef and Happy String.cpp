@@ -14,33 +14,23 @@ const double inf = 1.0e+18;
 const int mod = 100000007;
 
 using namespace std;
-
 void solve(){
-    string str= "aeiou";
-    string strout;
-    int count = 1;
-    cin>>strout;
-    R(i, 0, str.ln){
-        R(j, i, strout.ln){
-            if(str[i] == strout[j]){
-                int k = 0;
-                i = i;
-                while(k <= str.ln){
-                    if(strout[i] == str[k])
-                        count++;
-                    else k = k+1;
-                k++;
-                }
-            }   
-        }
-    }
-    // cout<<count<<endl;
-    if(count > 2){
-        cout<<"Happy"<<endl;
-    }
-    else{
-        cout<<"Sad"<<endl;
-    }
+    string s;
+       cin>>s;
+       int j,i;
+       int l=1;
+       for(j=0;j<s.length()-3;j++){
+           l=1;
+           for(i=j;i<j+3;i++){
+               if(s[i]!='a' && s[i]!='e' && s[i]!='i' && s[i]!='o' && s[i]!='u'){
+                  l=0;
+               }
+           }
+           if(l==1){
+               cout<<"HAPPY"<<endl;break;}
+           }
+       if(l==0)
+     cout<<"SAD"<<endl;
 }
 int32_t main(){
     ios::sync_with_stdio(0);
